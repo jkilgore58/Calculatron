@@ -27,6 +27,14 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)operators:(UIButton *)sender {
+
+    //frank
+    double op1 = self.operand1.text.doubleValue;
+    double op2 = self.operand2.text.doubleValue;
+
+
+    
+    
 }
 
 @end
