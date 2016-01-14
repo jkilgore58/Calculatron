@@ -48,18 +48,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DQ-lo-tyx">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yi7-ds-uFU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR3-zO-vpR">
                                         <rect key="frame" x="52" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rde-O8-3t4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-U4-rua">
                                         <rect key="frame" x="103" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QzE-Cl-iMb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-Rx-L2n">
                                         <rect key="frame" x="154" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHi-J6-p8W"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -77,6 +89,11 @@
                             <constraint firstItem="rvc-Da-uyf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xsK-MU-Can"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="operand1" destination="vEq-Xa-60H" id="zCx-Fy-ilr"/>
+                        <outlet property="operand2" destination="d4E-gE-Ilu" id="9Jv-Te-yAg"/>
+                        <outlet property="operation" destination="YJJ-1H-RWZ" id="vq0-H2-MJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
