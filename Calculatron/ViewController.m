@@ -22,19 +22,29 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 - (IBAction)operators:(UIButton *)sender {
 
     //frank
     double op1 = self.operand1.text.doubleValue;
     double op2 = self.operand2.text.doubleValue;
 
-
     
+    //Jonathan Code
+    self.operation.text = sender.titleLabel.text;
     
+    NSString *operation = self.operation.text;
+    
+    if ([operation isEqualToString:@"+"]) {
+        
+    } else if ([operation isEqualToString:@"-"]){
+        
+    } else if ([operation isEqualToString:@"x"]){
+        
+    } else {
+        
+    }
 }
+
 
 @end
